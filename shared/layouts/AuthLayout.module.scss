@@ -1,0 +1,19 @@
+@import "~@scss/variables";
+@import "~@scss/rem";
+
+.authLayout {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .content {
+    padding: pixtorem(12px);
+    box-sizing: border-box;
+    border: 3px solid $brand_color;
+    display: flex;
+    flex-direction: column;
+  }
+}

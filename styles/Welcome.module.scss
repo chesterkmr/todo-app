@@ -1,0 +1,59 @@
+@import "~@scss/variables";
+@import "~@scss/rem";
+
+.wrapper {
+  max-width: pixtorem(480px);
+  .content {
+    padding: pixtorem(12px);
+    box-sizing: border-box;
+    border: 3px solid $brand_color;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .brandWrapper {
+    border-bottom: 2px solid $brand_color;
+    margin-bottom: pixtorem(12px);
+    padding-bottom: pixtorem(12px);
+    cursor: pointer;
+  }
+
+  .brandIconWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .brandIcon {
+    width: pixtorem(82px);
+    height: pixtorem(82px);
+    display: block;
+  }
+
+  .textContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .title {
+      color: $brand_color;
+      font-size: pixtorem(18px);
+    }
+
+    .subtitle {
+      font-size: pixtorem(14px);
+      font-weight: normal;
+      margin-top: 0 !important;
+    }
+  }
+
+  .noteContainer {
+    text-align: center;
+    color: $brand_color;
+    font-size: pixtorem(12px);
+
+    .link {
+      text-decoration: underline;
+    }
+  }
+}
